@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<style>
+#container
+ { margin-left:0px;
+   margin-top:0px;
+   padding:0px;
+   width:2000px;
+   overflow:hidden;
+  }
+
+#sliderbox
+  { position:relative;
+    width:8000px;
+    animation-name:slideranimation;
+    animation-duration:20s;  
+    animation-iteration-count:infinite;
+
+  }
+
+#sliderbox img
+  { float:left;}
+@keyframes slideranimation
+  { 
+     0% {left:0px;}
+    20% {left:0px;}
+    25% {left:-2000px;}
+    45% {left:-2000px; }
+    50% {left:-4000px;}
+    70% {left:-4000px;}
+    75% {left:-6000px;}
+ h2{position:relative;
+    margin-left:400px;}
+
+</style>
+<title> First Webpage</title>
+</head>
+
+<body>
+<h1>Materials</h1>
+<div id="container">
+   <div id="sliderbox">
+        <img src="1.jpeg" width="2000" height="800"/>
+        <img src="2.jpeg" width="2000" height="800"/>
+        <img src="3.jpeg" width="2000" height="800"/>
+        <img src="4.jpeg" width="2000" height="800"/> 
+        
+  </div>    <h2>Materials</h2>
+ </div>
+  <h2>Materials</h2>
+
+<!-- <audio autoplay one>
+   <source src="1.mp3" type="audio/mpeg"/>
+  </audio>-->
+</body>
+
+</html>
