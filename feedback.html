@@ -31,7 +31,14 @@
 			color: rgb(24,104,156);
 		}
 	</style>
-	<style>
+	<style type="text/css">
+		#search
+		{
+			align:right;
+			width:100px;
+			border: 2px;
+		}
+	</style>
 	form
 	{ float:left; margin-left:200px;}
 	</style>
@@ -50,10 +57,11 @@
 	<li><a>Feedback</a></li>
 	
 </ul>
- <form align="right">
+<div id="search">
+ <form>
 <input type="text" name="text" class="search" placeholder="Search Here">
 <input type="submit" name="submit" class="submit" value="Search">
-</form>
+	</form></div>
 		<br><centre><h2>Feedback<i>:</h2><br>
 		<br><textarea onFocus="select()" onClick="select()" tabindex="5" cols="50" rows="20">About the webpage of Group1 !
 			</textarea><br></centre>
