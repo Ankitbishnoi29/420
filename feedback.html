@@ -1,71 +1,44 @@
+<!DOCTYPE html>
 <html>
-	<head>
-	<title>Feedback | Materials | Museum | Indian Institute of technology</title>
-	
-	<!--navigation bar-->
-	<style type="text/css"> 
-		ul {
-			background-color: rgb(24,104,156);
-		    list-style-type: none;
-		    overflow: hidden;
-		    margin: -7.5px -7.5px;
-		    padding: 0px;
-		    width: 1360px;
-		}
-		ul
-		
-		li {
-			font-size: 20px;
-			float: left;
-			height: 37px;
+<head>
+<meta charset="utf-8"/>
+<title>Feedback</title>
+<script type="text/javascript">
+  function check()
+    { var a=document.getElementById('museum-yes').checked;
+      var b=document.getElementById('material-yes').checked;
+      var c=document.getElementById('museum-no').checked;
+      var d=document.getElementById('material-no').checked;
+      
+      if((a==false&& c==false)||( b==false && d==false))
+        { alert('Please fill form completely!!!');
+          return false;
+        }
 
-		}
-		li a {
-			display: block;
-			color: white;
-			padding: 16px;
-			text-align: center;
-			text-decoration: none;
-			
-		}
-		li a:hover {
-			background-color: white;
-			color: rgb(24,104,156);
+      else{ return true;}
+    }
+</script>
 
-		}
-	</style>
-	
-	
-	
-	
-	</head>
-	<body>
-		<!--Mono-->
-<img src="mono2.png" width="1360px" height="87px" style="margin: -7.5px -7.5px; ">
 
-<!--navigation Menu-->
-<ul>
-	<li style="width: 80px;"></li>
-	<li><a href="https://ankitbishnoi29.github.io/420/1.html">Home</a></li>
-	<li><a href="https://ankitbishnoi29.github.io/420/materials.html">Materials</a></li>
-	<li><a href="https://ankitbishnoi29.github.io/420/about%20us.html">About Us</a></li>
-	<li><a href="https://ankitbishnoi29.github.io/420/members.html">Members</a></li>
-	<li><a href="https://ankitbishnoi29.github.io/420/feedback.html">Feedback</a></li>
-	<li style="float: right; padding: 5px; padding-right: 20px;">
-		<form>
-			<input type="text" name="search" placeholder="Search Here...." style="height: 27px; font-size: 15px; width: 200px; padding: 3px; color:  rgb(24,104,156);">
-			<input type="submit" name="submit" value="search" style="height: 37px; font-size: 15px; padding: 3px; color:  rgb(24,104,156); margin-left: -5px;" >
+</head>
 
-		</form>
-	</li>
-</ul>
+<body>
+<form action="feedbacksubmission.html" method="post" onsubmit="return check()">
+Do u like Museum? </br>
+  Yes<input type="radio" name="museum" id="museum-yes"/>
+  No<input type="radio" name="museum" id="museum-no">  </br></br>
 
-		
-		<br><centre><h2>Feedback<i>:</h2><br>
-		<br><textarea onFocus="select()" onClick="select()" tabindex="5" cols="50" rows="20">About the webpage of Group1 !
-			</textarea><br></centre>
-		<br>
-		<button type="button" onclick="alert('Your Feedback submitted successfully!')">Submit</button>
+Do u like Theme 'Material'? </br>
+  Yes<input type="radio" name="material" id="material-yes"/>
+  No<input type="radio" name="material" id="material-no"> </br> </br>
 
-	</body>
+Any Suggestions? </br>
+ <textarea type="text" name="suggestion" rows="5" id="suggestion"/></textarea> </br> </br>
+
+<input type="submit" name="submit" id="submit" value="submit"> 
+
+
+</form>
+
+</body>
 </html>
